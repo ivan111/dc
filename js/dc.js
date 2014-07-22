@@ -831,6 +831,8 @@ dc = (function ()
 
         paths = ve.createAutoPath( ctx, elems );
 
+        paths.setAlign( elems.a.cn.Y, ve.ALIGN_PIN_TURN, 20 );
+
         paths.setAlign( elems.and.cn.A, ve.ALIGN_PIN, 0 );
         paths.setAlign( elems.and.cn.B, ve.ALIGN_PIN, 0 );
 
