@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>いぢり論理回路</title>
+
+<link rel="stylesheet" href="css/dc.css" type="text/css"/>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/dc.min.js"></script>
+
+<script>
+$(document).ready( function () {
+    dc.createAndGate( $( '#and-gate' ) );
+    dc.createOrGate( $( '#or-gate' ) );
+    dc.createNotGate( $( '#not-gate' ) );
+    dc.createNandGate( $( '#nand-gate' ) );
+    dc.createNorGate( $( '#nor-gate' ) );
+    dc.createXorGate( $( '#xor-gate' ) );
+    dc.createXnorGate( $( '#xnor-gate' ) );
+    dc.createSRFlipFlopNor( $( '#sr-flip-flop-nor' ) );
+    dc.createSRFlipFlopNand( $( '#sr-flip-flop-nand' ) );
+    dc.createClockedSRFlipFlop( $( '#clocked-sr-flip-flop' ) );
+    dc.createDFlipFlopNor( $( '#d-flip-flop-nor' ) );
+    dc.createDFlipFlopNand( $( '#d-flip-flop-nand' ) );
+    dc.createHalfAdder( $( '#half-adder' ) );
+    dc.createHalfAdder2( $( '#half-adder2' ) );
+    dc.createFullAdder( $( '#full-adder' ) );
+} );
+</script>
+
+</head>
+
+<body>
+
+<a href="/">Home</a>
+
+<h1>いぢり論理回路</h1>
+
+
+<p>ブラウザで操作できるタイプの論理回路です。スイッチをクリックすると論理回路の動きがわかります。古いブラウザだと動きません。</p>
+
+<p>このソフト？はフリーウェアなので自由に改造・配布してOKです。使い方は、dc.cssとjqueryとdc.min.jsをダウンロードして、自分のページにリンクします。あとは、このページのscriptタグのようにして作成します。</p>
+
+
+<h2>一覧</h2>
+
+<ul>
+  <li><a href="#and">AND</a></li>
+  <li><a href="#or">OR</a></li>
+  <li><a href="#not">NOT</a></li>
+  <li><a href="#nand">NAND</a></li>
+  <li><a href="#nor">NOR</a></li>
+  <li><a href="#xor">XOR</a></li>
+  <li><a href="#xnor">XNOR</a></li>
+  <li><a href="#name-sr-flip-flop-nor">RS型フリップフロップ（ SR flip-flop (NOR base) ）</a></li>
+  <li><a href="#name-sr-flip-flop-nand">RS型フリップフロップ（ SR flip-flop (NAND base) ）</a></li>
+  <li><a href="#name-clocked-sr-flip-flop">同期型RSフリップフロップ（ clocked SR flip-flop ）</a></li>
+  <li><a href="#name-d-flip-flop-nor">D フリップフロップ（ D flip-flop (NOR base) ）</a></li>
+  <li><a href="#name-d-flip-flop-nand">D フリップフロップ（ D flip-flop (SR NAND base) ）</a></li>
+  <li><a href="#name-half-adder1">半加算器１（Half Adder）</a></li>
+  <li><a href="#name-half-adder2">半加算器２（Half Adder）</a></li>
+  <li><a href="#name-full-adder">全加算器（Full Adder）</a></li>
+</ul>
+
+
+<h2>いぢり論理回路</h2>
+
+<h3><a name="and">AND</a></h3>
+<div id="and-gate"></div>
+
+<h3><a name="or">OR</a></h3>
+<div id="or-gate"></div>
+
+<h3><a name="not">NOT</a></h3>
+<div id="not-gate"></div>
+
+<h3><a name="nand">NAND</a></h3>
+<div id="nand-gate"></div>
+
+<h3><a name="nor">NOR</a></h3>
+<div id="nor-gate"></div>
+
+<h3><a name="xor">XOR</a></h3>
+<div id="xor-gate"></div>
+
+<h3><a name="xnor">XNOR</a></h3>
+<div id="xnor-gate"></div>
+
+<h3><a name="name-sr-flip-flop-nor">RS型フリップフロップ（ SR flip-flop (NOR base) ）</a></h3>
+<div id="sr-flip-flop-nor"></div>
+
+<h3><a name="name-sr-flip-flop-nand">RS型フリップフロップ（ SR flip-flop (NAND base) ）</a></h3>
+<div id="sr-flip-flop-nand"></div>
+
+<h3><a name="name-clocked-sr-flip-flop">同期型RSフリップフロップ（ clocked SR flip-flop ）</a></h3>
+<div id="clocked-sr-flip-flop"></div>
+
+<h3><a name="name-d-flip-flop-nor">D フリップフロップ（ D flip-flop (NOR base) ）</a></h3>
+<div id="d-flip-flop-nor"></div>
+
+<h3><a name="name-d-flip-flop-nand">D フリップフロップ（ D flip-flop (SR NAND base) ）</a></h3>
+<div id="d-flip-flop-nand"></div>
+
+<h3><a name="name-half-adder1">半加算器１（Half Adder）</a></h3>
+<div id="half-adder"></div>
+
+<h3><a name="name-half-adder2">半加算器２（Half Adder）</a></h3>
+<div id="half-adder2"></div>
+
+<h3><a name="name-full-adder">全加算器（Full Adder）</a></h3>
+<div id="full-adder"></div>
+
+</body>
+</html>
