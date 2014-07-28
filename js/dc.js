@@ -69,13 +69,12 @@ dc = (function ()
 
     function createSwitch ( $container, cn, x, y )
     {
-        var idName = 'dc-sw' + (numSwitches++), $swDiv, $sw, $canvas, bbox;
+        var idName = 'dc-sw' + (numSwitches++), $swDiv, $sw, $canvas;
 
         $swDiv = $( '<div class="onoffswitch"></div>' );
         $swDiv.append( SW_HTML.replace( '{{ID_NAME}}', idName ).replace( '{{ID_NAME}}', idName ) );
 
         $canvas = $container.find( 'canvas' );
-        bbox = $canvas[0].getBoundingClientRect();
 
         $swDiv.css( {
             position:  'absolute',
@@ -380,15 +379,14 @@ dc = (function ()
 
     function updateSwitchPos ( $container, dummy )
     {
-        var $swDiv = dummy.Y.$sw.parent(), $canvas, bbox;
+        var $swDiv = dummy.Y.$sw.parent(), $canvas;
 
         $canvas = $container.find( 'canvas' );
-        bbox = $canvas[0].getBoundingClientRect();
 
         $swDiv.css( {
             position:  'absolute',
-            left: bbox.left + dummy.cn.Y.getX() - SW_SUB_LEFT,
-            top: bbox.top + dummy.cn.Y.getY() - SW_SUB_TOP
+            left: dummy.cn.Y.getX() - SW_SUB_LEFT,
+            top: dummy.cn.Y.getY() - SW_SUB_TOP
         } );
     }
 
