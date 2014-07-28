@@ -47,6 +47,8 @@ dc = (function ()
     {
         var $canvas, $canvasDiv, ctx;
 
+        $container.css( { position: 'relative' } );
+
         idName += (numCanvases++);
 
         $canvasDiv = $( '<div class="dc-schematic"></div>' );
@@ -77,8 +79,8 @@ dc = (function ()
 
         $swDiv.css( {
             position:  'absolute',
-            left: bbox.left + x - SW_SUB_LEFT,
-            top: bbox.top + y - SW_SUB_TOP
+            left: x - SW_SUB_LEFT,
+            top: y - SW_SUB_TOP
         } );
 
         $container.append( $swDiv );
