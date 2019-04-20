@@ -1,10 +1,10 @@
 dc
 ==
 
-> 私の嫁と娘にこのソフトを捧げます。
+> 電気グルーヴのピエール瀧さんにこのソフトを捧げます。
 
-logic circuit that enable users manipulate circuit in browsers.
+ANDやORなど簡単な電子回路をブラウザで操作しながら試せる
 
-[いぢる](http://vanya.jp.net/dc/)
+[試す](http://vanya.jp.net/dc/)
 
 ![Screenshot](https://github.com/ivan111/dc/raw/master/dc.png)
